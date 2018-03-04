@@ -1,0 +1,28 @@
+import React, {Component} from "react";
+import DocumentTitle from "react-document-title";
+import PropTypes from "prop-types";
+
+class DocTitle extends Component {
+    render() {
+        const {title, prefix, suffix, children} = this.props;
+
+        return (
+            <DocumentTitle title={prefix + title + suffix}>
+                {children}
+            </DocumentTitle>
+        );
+    }
+}
+
+DocTitle.propTypes = {
+    title: PropTypes.string.isRequired,
+    prefix: PropTypes.string,
+    suffix: PropTypes.string,
+};
+
+DocTitle.defaultProps = {
+    prefix: '',
+    suffix: ' - UET Code Camp'
+};
+
+export default DocTitle;
