@@ -23,16 +23,19 @@ class App extends Component {
 
         return (
             <div className="App">
-                <header className="App-header">
-                    <h1 className="App-title">{hi}</h1>
-                </header>
+                <div className="container">
+                    <header className="App-header">
+                        <h1 className="App-title">{hi}</h1>
+                    </header>
 
-                <div className="div App-logo">
-                    <img src="/assets/images/logo.png" alt="Logo"/>
+                    <main className="div App-logo">
+                        <img src="/assets/images/logo.png" alt="Logo"/>
+                    </main>
+
+                    <footer className="App-intro">
+                        To get started, edit <code>src/App.js</code> and save to reload.
+                    </footer>
                 </div>
-                <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to reload.
-                </p>
             </div>
         );
     }
